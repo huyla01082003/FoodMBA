@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisActivity"
+    android:id="@+id/regis_layout">
+
+    <RelativeLayout
+        android:paddingLeft="27dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#17171B"
+        >
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/baseline_arrow_back_ios_new_24"
+            android:layout_marginTop="24dp"/>
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/img_1" />
+
+        <TextView
+            android:fontFamily="@font/inter_bold"
+            android:id="@+id/textdangnhap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="Đăng Ký"
+            android:textColor="#FFD966"
+            android:textSize="24dp" />
+
+        <TextView
+            android:fontFamily="@font/inter_medium"
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textdangnhap"
+            android:text="Tham gia cùng chúng tôi ngay để khám phá nhiều hơn các quán ăn."
+            android:textSize="13dp"
+            android:textColor="#DADADA"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:paddingLeft="27dp"
+        android:paddingRight="27dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:textColor="@color/black"
+            android:paddingLeft="18dp"
+            android:id="@+id/editTextTenTaiKhoan"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="80dp"
+            android:hint="Tên tài khoản"
+            android:textColorHint="@color/grey"
+            android:inputType="text"
+            android:radius="8dp"
+            android:drawableLeft="@drawable/baseline_alternate_email_24"
+            android:background="@drawable/rounded_edittext_background"
+            />
+
+        <RelativeLayout
+            android:layout_marginTop="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:textColor="@color/black"
+                android:paddingLeft="18dp"
+                android:id="@+id/editTextMatKhau"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Mật khẩu"
+                android:textColorHint="@color/grey"
+                android:inputType="textPassword"
+                android:radius="10dp"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:background="@drawable/rounded_edittext_background"
+
+
+                />
+            <ImageButton
+                android:background="@android:color/transparent"
+                android:id="@+id/btn_showPass"
+                android:layout_marginRight="12dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_width="36dp"
+                android:layout_height="24dp"
+                android:src="@drawable/eye_green_show_vector"
+                />
+            <ImageButton
+                android:background="@android:color/transparent"
+                android:id="@+id/btn_hidePass"
+                android:layout_marginRight="12dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_width="36dp"
+                android:layout_height="24dp"
+                android:src="@drawable/eye_green_hide_vector"
+                />
+        </RelativeLayout>
+
+
+        <Button
+            android:fontFamily="@font/inter_bold"
+            android:id="@+id/regisbtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="25dp"
+            android:text="Đăng Ký"
+            android:textColor="#FFF"
+            android:backgroundTint="#2DA86D"
+            android:textSize="16dp"
+            />
+
+    </LinearLayout>
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

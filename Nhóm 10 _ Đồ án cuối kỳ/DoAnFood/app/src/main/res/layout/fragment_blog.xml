@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/blog_container"
+    android:background="@color/white">
+
+   <RelativeLayout
+       android:id="@+id/blog_layout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+       <TextView
+           android:layout_width="0dp"
+           android:layout_height="0dp"
+           android:id="@+id/tvEx"/>
+       <LinearLayout
+           android:id="@+id/header"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/color_backgroud_blog"
+           android:orientation="vertical"
+           android:paddingLeft="27dp"
+           android:paddingRight="27dp"
+           android:paddingBottom="27dp"
+           android:paddingTop="24dp">
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/circle_backgroud"/>
+                <TextView
+                    android:id="@+id/tv_Username"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="12dp"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_bold"
+                    android:text="Keishjn" />
+            </LinearLayout>
+
+           <RelativeLayout
+               android:layout_marginTop="10dp"
+               android:layout_below="@+id/btn_back"
+               android:background="@drawable/search_shape"
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="100dp">
+
+
+               <EditText
+                   android:textColorHint="#A82D7E"
+                   android:paddingTop="0dp"
+                   android:layout_marginTop="8dp"
+                   android:layout_marginLeft="12dp"
+                   android:layout_marginRight="12dp"
+                   android:layout_marginBottom="8dp"
+                   android:textColor="@color/black"
+                   android:id="@+id/txt_blog"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:background="@null"
+                   android:fontFamily="@font/inter_medium"
+                   android:hint="Tìm kiếm món ăn, quán ăn, ..."
+                   android:paddingLeft="12dp"
+                   android:textSize="14dp" />
+
+
+           </RelativeLayout>
+           <ImageButton
+               android:id="@+id/btn_send"
+               android:scaleType="fitCenter"
+               android:background="@android:color/transparent"
+               android:src="@drawable/send_vector"
+               android:layout_marginTop="8dp"
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:layout_gravity="end"/>
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_below="@+id/header"
+           android:paddingLeft="27dp"
+           android:paddingRight="27dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="0.1"
+               android:orientation="horizontal">
+               <ListView
+                   android:id="@+id/lsvBlog"
+                   android:layout_marginTop="12dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginBottom="20dp"
+                   />
+           </LinearLayout>
+       </LinearLayout>
+
+   </RelativeLayout>
+</FrameLayout>

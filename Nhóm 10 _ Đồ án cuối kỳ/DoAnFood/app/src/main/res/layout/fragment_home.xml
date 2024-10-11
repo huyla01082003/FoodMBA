@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/home_layout">
+    
+    <LinearLayout
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black_background"
+            android:orientation="vertical"
+            android:paddingLeft="27dp"
+            android:paddingRight="27dp"
+            android:paddingBottom="30dp">
+            <ImageView
+                android:id="@+id/restaurant_vector_home"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/restaurant_vector_home"/>
+            <TextView
+                android:id="@+id/hello"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xin chào, "
+                android:textColor="@color/yellow"
+                android:layout_marginTop="43dp"
+                android:textSize="30dp"
+                android:fontFamily="@font/inter_bold"/>
+            <RelativeLayout
+                android:id="@+id/location"
+                android:layout_below="@+id/hello"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <View
+                    android:background="@drawable/baseline_place_24"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:id="@+id/location_icon"
+                    android:layout_centerVertical="true"/>
+
+                <Button
+                    android:id="@+id/btn_location"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/location_icon"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/inter_medium"
+                    android:paddingLeft="8dp"
+                    android:text="TP.HCM"
+                    android:textColor="@color/white"/>
+                <View
+                    android:layout_marginLeft="75dp"
+                    android:background="@drawable/baseline_keyboard_arrow_down_24"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_toRightOf="@+id/location_icon"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@id/location"
+                android:gravity="center_vertical"
+                android:background="@drawable/search_shape"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <EditText
+                    android:textColor="@color/black"
+                    android:maxLines="1"
+                    android:id="@+id/txt_search"
+                    android:layout_width="289dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:fontFamily="@font/inter_medium"
+                    android:hint="Tìm kiếm món ăn, quán ăn, ..."
+                    android:paddingLeft="24dp"
+                    android:textSize="14dp" />
+
+                <ImageButton
+                    android:id="@+id/btn_search"
+                    android:padding="8dp"
+                    android:background="@drawable/search_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:paddingLeft="27dp"
+            android:paddingRight="27dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_alignParentStart="true">
+                    <ImageButton
+                        android:id="@+id/category_all"
+                        android:padding="8dp"
+                        android:src="@drawable/all_vector"
+                        android:background="@drawable/category_shape_chosen"
+                        android:layout_width="96dp"
+                        android:layout_height="116dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"/>
+
+                    <TextView
+                        android:layout_marginTop="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TẤT CẢ"
+                        android:fontFamily="@font/inter_extrabold"
+                        android:textColor="@color/black_background"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true">
+                    <ImageButton
+                        android:id="@+id/category_restaurant"
+                        android:background="@drawable/category_shape"
+                        android:src="@drawable/restaurant_vector"
+                        android:layout_width="96dp"
+                        android:layout_height="116dp"
+                        android:scaleType="centerInside"/>
+
+                    <TextView
+                        android:layout_marginTop="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="QUÁN ĂN"
+                        android:fontFamily="@font/inter_extrabold"
+                        android:textColor="@color/black_background"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_alignParentEnd="true">
+                    <ImageButton
+                        android:id="@+id/category_cafeshop"
+                        android:background="@drawable/category_shape"
+                        android:src="@drawable/cafeshop_vector"
+                        android:layout_width="96dp"
+                        android:layout_height="116dp"
+                        android:scaleType="centerInside"/>
+
+                    <TextView
+                        android:layout_marginTop="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="QUÁN CAFE"
+                        android:fontFamily="@font/inter_extrabold"
+                        android:textColor="@color/black_background"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/category_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tất cả quán"
+                android:fontFamily="@font/inter_bold"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:orientation="horizontal">
+                <ListView
+                    android:id="@+id/lsvHome"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="100dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

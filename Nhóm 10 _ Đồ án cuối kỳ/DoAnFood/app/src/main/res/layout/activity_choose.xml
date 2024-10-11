@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:layout_centerInParent="true"
+        android:id="@+id/customer"
+        android:backgroundTint="@color/black_background"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:text="Khách hàng"/>
+    <Button
+        android:layout_below="@+id/customer"
+        android:layout_centerInParent="true"
+        android:id="@+id/admin"
+        android:backgroundTint="@color/black_background"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:text="Admin"/>
+</RelativeLayout>

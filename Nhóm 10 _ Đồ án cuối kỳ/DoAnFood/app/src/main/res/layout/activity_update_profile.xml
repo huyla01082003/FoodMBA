@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity"
+    android:id="@+id/update_profile_layout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#17171B"
+        android:paddingLeft="27dp">
+
+        <ImageButton
+            android:id="@id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/baseline_arrow_back_ios_new_24"
+            android:layout_marginTop="24dp" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="125dp"
+        android:paddingLeft="27dp"
+        android:paddingRight="27dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:scaleType="centerCrop"
+            android:src="@drawable/baseline_account_circle_24"
+            android:id="@+id/imgprofile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/circle_backgroud"
+            android:padding="32dp"
+            android:layout_gravity="center_horizontal"
+            />
+        
+        <ImageButton
+            android:id="@+id/btn_imgprofile"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_camera_alt_24"
+            android:layout_gravity="center_horizontal"/>
+
+        <EditText
+            android:textColor="@color/black"
+            android:paddingLeft="18dp"
+            android:id="@+id/txt_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:hint="Email"
+            android:textColorHint="@color/grey"
+            android:inputType="text"
+            android:radius="8dp"
+            android:drawableLeft="@drawable/baseline_alternate_email_24"
+            android:background="@drawable/rounded_edittext_background"
+            />
+
+
+        <EditText
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            android:paddingLeft="18dp"
+            android:id="@+id/txt_contact"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Số điện thoại"
+            android:textColorHint="@color/grey"
+            android:radius="8dp"
+            android:drawableLeft="@drawable/baseline_call_24_black"
+            android:background="@drawable/rounded_edittext_background"
+            />
+
+        <EditText
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            android:paddingLeft="18dp"
+            android:id="@+id/txt_address"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Địa chỉ"
+            android:textColorHint="@color/grey"
+            android:radius="8dp"
+            android:drawableLeft="@drawable/baseline_home_24_black"
+            android:background="@drawable/rounded_edittext_background"
+            />
+        <Button
+            android:fontFamily="@font/inter_bold"
+            android:id="@+id/btn_update"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="25dp"
+            android:text="Chỉnh sửa"
+            android:textColor="#FFF"
+            android:backgroundTint="#FA7070"
+            android:textSize="16dp"/>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

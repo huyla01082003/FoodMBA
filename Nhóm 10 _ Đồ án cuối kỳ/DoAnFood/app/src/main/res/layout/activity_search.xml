@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/search_layout"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black_background"
+        android:orientation="vertical"
+        android:paddingLeft="27dp"
+        android:paddingRight="27dp"
+        android:paddingBottom="27dp"
+        android:paddingTop="24dp">
+
+        <ImageButton
+            android:background="@null"
+            android:id="@+id/btn_back"
+            android:layout_width="48dp"
+            android:layout_height="24dp"
+            android:src="@drawable/baseline_arrow_back_ios_24"/>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/btn_back"
+            android:gravity="center"
+            android:background="@drawable/search_shape"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <EditText
+                android:textColor="@color/black"
+                android:maxLines="1"
+                android:id="@+id/txt_search"
+                android:layout_width="289dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:fontFamily="@font/inter_medium"
+                android:hint="Tìm kiếm món ăn, quán ăn, ..."
+                android:paddingLeft="24dp"
+                android:textSize="14dp" />
+
+            <ImageButton
+                android:id="@+id/btn_search"
+                android:padding="8dp"
+                android:background="@drawable/search_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="12dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/header"
+        android:paddingLeft="27dp"
+        android:paddingRight="27dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_search_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tất cả quán ăn"
+            android:fontFamily="@font/inter_bold"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:orientation="horizontal">
+            <ListView
+                android:id="@+id/lsvSearch"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
